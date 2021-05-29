@@ -9,7 +9,7 @@ var el = document.querySelectorAll('.color-switcher li'),
     // get color value from localStorage
     localColor = localStorage.getItem('pagecolor');
   
-    
+
  // set color name in class of body  from the localStorage
 document.body.classList.add(localColor);
 
@@ -31,7 +31,6 @@ for(let index = 0; index < el.length; index++) {
         // add color value in localStorage
         localStorage.setItem('pagecolor', this.getAttribute('data-color'));
 
-   
     },false);  
 
 }
